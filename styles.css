@@ -25,3 +25,15 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.square-dancer{
+  border: 10px solid blue;
+  border-radius:1px;
+  position: absolute;
+}
+
+.circle-dancer{
+  border: 15px solid blue;
+  border-radius:15px;
+  position: absolute;
+}
