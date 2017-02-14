@@ -9,10 +9,17 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
+.title, .addDancerButton, .addSSDancerButton, .addMovingDancerButton{
   padding:5px 12px;
   float:right;
 }
+
+.lineupButton {
+  padding:6px 15px;
+  float:left;
+  font-size: 18px;
+}
+
 .topbar{
   height:32px;
   background-color: #555;
@@ -37,3 +44,4 @@ body, a:link, a:visited, a:active{
   border-radius:15px;
   position: absolute;
 }
+

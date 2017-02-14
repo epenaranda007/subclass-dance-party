@@ -30,3 +30,9 @@ Dancer.prototype.setPosition = function(top, left) {
   };
   this.$node.css(styleSettings);
 };
+
+Dancer.prototype.lineup = function() {
+  for (var i = 0; i < window.dancers.length; i++) {
+    
+  }
+};
