@@ -1,5 +1,12 @@
+/*
+    1  https://media0.giphy.com/media/6qNansp6qSjWU/200w.gif#285
+    2  http://gifdanceparty.giphy.com/assets/dancers/pumpgirl.gif
+    3  https://media0.giphy.com/media/31vamYdZV5ISQ/200.gif#105
+*/
+
 $(document).ready(function() {
   window.dancers = [];
+  window.centerStage = [];
 
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
@@ -81,11 +88,31 @@ $(document).ready(function() {
     }
 
   });
-
+  // make dancer spin
   $('body').on('mouseover', '.dancer', function(event) {
     $(this).toggleClass('on-mouseover');
   });
 
+  $('body').on('click', '.dancer', function(event) {
+    var $body = $('body');
+    var x = $body.width();
+    var y = $body.height();
+
+
+    if (window.centerStage.length < 2) {
+      window.centerStage.push(this);
+    } else {
+      var $shifted = window.centerStage.shift();
+      $($shifted).animate({left: x * Math.random(), top: y * Math.random()});
+      window.centerStage.push(this);
+    }
+    if (window.centerStage.length === 2) {
+      $(window.centerStage[0]).animate({left: x * 0.45, top: y * 0.67}, 700);
+      $(window.centerStage[1]).animate({left: x * 0.55, top: y * 0.67}, 700);
+    }
+    
+
+  });
 
 
 });

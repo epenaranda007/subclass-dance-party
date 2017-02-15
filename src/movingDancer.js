@@ -14,8 +14,9 @@ MovingDancer.prototype.step = function() {
   // toggle() is a jQuery method to show/hide the <span> tag.
   // See http://api.jquery.com/category/effects/ for this and
   // other effects you can use on a jQuery-wrapped html tag.
-  this.$node.animate({height: '20px'}, 500);
-  this.$node.animate({height: '8px'}, 1000);
+  
+  //this.$node.animate({height: '20px'}, 500);
+  //this.$node.animate({height: '8px'}, 1000);
 
 /*  this.oldStep();
 
