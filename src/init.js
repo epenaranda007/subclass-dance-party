@@ -82,8 +82,8 @@ $(document).ready(function() {
     //backup
     var $body = $('body');
     var x = $body.width() * .25;
-    var y = $body.height() * .67;
-    for (var i = 0; i < window.dancers.length; i++, x += 20) {
+    var y = $body.height() * .45;
+    for (var i = 0; i < window.dancers.length; i++, x += 50) {
       window.dancers[i].lineUp(x, y);
     }
 
@@ -107,10 +107,9 @@ $(document).ready(function() {
       window.centerStage.push(this);
     }
     if (window.centerStage.length === 2) {
-      $(window.centerStage[0]).animate({left: x * 0.45, top: y * 0.67}, 700);
-      $(window.centerStage[1]).animate({left: x * 0.55, top: y * 0.67}, 700);
+      $(window.centerStage[0]).animate({left: x * 0.40, top: y * 0.5, 'z-index': 100}, 700);
+      $(window.centerStage[1]).animate({left: x * 0.50, top: y * 0.5, 'z-index': 100}, 700);
     }
-    
 
   });
 
