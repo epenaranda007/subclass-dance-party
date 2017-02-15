@@ -2,6 +2,9 @@ var MovingDancer = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps); 
   this.top = top;
   this.left = left;
+  this.$node = $('<img class="dancer gif" src="https://media0.giphy.com/media/6qNansp6qSjWU/200w.gif#285" alt=""/>');
+  this.step();
+  this.setPosition(top, left);
 };
 
 MovingDancer.prototype = Object.create(Dancer.prototype);

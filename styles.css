@@ -27,9 +27,11 @@ body, a:link, a:visited, a:active{
   height:32px;
   background-color: #555;
 }
+
 .title{
   background-color: #777;
 }
+
 .dancer{
   border:10px solid green;
   border-radius:10px;
@@ -42,21 +44,25 @@ body, a:link, a:visited, a:active{
   position: absolute;
 }
 
-.on-mouseover {
+.blinky {
   border: 15px solid yellow;
   border-radius:15px;
   position: absolute;
 }
 
-.blinky {
+.on-mouseover {
+  opacity: 0.2;
+}
+
+.gif {
   border: 0;
   border-radius: 0;
-  /*background-image: url("https://media0.giphy.com/media/6qNansp6qSjWU/200w.gif#285");*/
   height: 200px;
   width: 200px;
   background-repeat: no-repeat;
   position: absolute;
   display: block;
 }
+
 
 

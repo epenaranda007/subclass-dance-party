@@ -1,5 +1,8 @@
 var ShapeShiftingDancer = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps); 
+  this.$node = $('<img class="dancer gif" src="https://media0.giphy.com/media/31vamYdZV5ISQ/200.gif#105" alt=""/>');
+  this.step();
+  this.setPosition(top, left);
 };
 
 ShapeShiftingDancer.prototype = Object.create(Dancer.prototype);

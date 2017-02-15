@@ -89,9 +89,14 @@ $(document).ready(function() {
 
   });
   // make dancer spin
-  $('body').on('mouseover', '.dancer', function(event) {
+  $('body').on('mouseover', '.gif', function(event) {
     $(this).toggleClass('on-mouseover');
   });
+
+  $('body').on('mouseover', '.dancer', function(event) {
+    $(this).toggleClass('blinky');
+  });
+
 
   $('body').on('click', '.dancer', function(event) {
     var $body = $('body');
