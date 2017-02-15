@@ -5,7 +5,8 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
-  background-image: url("http://az616578.vo.msecnd.net/files/2016/07/31/636055831659367167-1875003841_Stage%202.jpg");
+  /*background-image: url("http://az616578.vo.msecnd.net/files/2016/07/31/636055831659367167-1875003841_Stage%202.jpg");*/
+  background-image: url("http://vignette4.wikia.nocookie.net/fantendo/images/5/51/Pok%C3%A9mon_Stadium_2.jpg/revision/latest?cb=20141221100214");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -51,7 +52,7 @@ body, a:link, a:visited, a:active{
 }
 
 .on-mouseover {
-  opacity: 0.2;
+  filter: invert(100%);
 }
 
 .gif {

@@ -2,6 +2,8 @@
     1  https://media0.giphy.com/media/6qNansp6qSjWU/200w.gif#285
     2  http://gifdanceparty.giphy.com/assets/dancers/pumpgirl.gif
     3  https://media0.giphy.com/media/31vamYdZV5ISQ/200.gif#105
+    Bulbasur https://media1.giphy.com/media/IQ4aXhXz5aoQE/200w.gif#55
+    Dizzy https://media3.giphy.com/media/FcGKYdJSGDykU/200.gif#13
 */
 
 $(document).ready(function() {
@@ -82,7 +84,7 @@ $(document).ready(function() {
     //backup
     var $body = $('body');
     var x = $body.width() * .25;
-    var y = $body.height() * .45;
+    var y = $body.height() * .39;
     for (var i = 0; i < window.dancers.length; i++, x += 50) {
       window.dancers[i].lineUp(x, y);
     }
@@ -112,8 +114,8 @@ $(document).ready(function() {
       window.centerStage.push(this);
     }
     if (window.centerStage.length === 2) {
-      $(window.centerStage[0]).animate({left: x * 0.40, top: y * 0.5, 'z-index': 100}, 700);
-      $(window.centerStage[1]).animate({left: x * 0.50, top: y * 0.5, 'z-index': 100}, 700);
+      $(window.centerStage[0]).animate({left: x * 0.40, top: y * 0.47, 'z-index': 100}, 700);
+      $(window.centerStage[1]).animate({left: x * 0.50, top: y * 0.47, 'z-index': 100}, 700);
     }
 
   });
