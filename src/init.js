@@ -85,13 +85,17 @@ $(document).ready(function() {
     var $body = $('body');
     var x = $body.width() * .25;
     var y = $body.height() * .39;
-    for (var i = 0; i < window.dancers.length; i++, x += 50) {
+    for (var i = 0; i < window.dancers.length; i++, x += 60) {
       window.dancers[i].lineUp(x, y);
     }
 
   });
   // make dancer spin
   $('body').on('mouseover', '.gif', function(event) {
+    $(this).toggleClass('on-mouseover');
+  });
+
+  $('body').on('mouseleave', '.gif', function(event) {
     $(this).toggleClass('on-mouseover');
   });
 

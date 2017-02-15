@@ -5,28 +5,47 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
-  /*background-image: url("http://az616578.vo.msecnd.net/files/2016/07/31/636055831659367167-1875003841_Stage%202.jpg");*/
   background-image: url("http://vignette4.wikia.nocookie.net/fantendo/images/5/51/Pok%C3%A9mon_Stadium_2.jpg/revision/latest?cb=20141221100214");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  font-family: "Comic Sans MS";
 }
-body, a:link, a:visited, a:active{
+/*body, a:link, a:visited, a:active{
   color: lightblue;
-}
+}*/
 .title, .addDancerButton, .addSSDancerButton, .addMovingDancerButton{
   padding:5px 12px;
-  float:right;
+  display: inline-block;
+  color: black;
+}
+
+.lineupButton, .pikachu, .dizzy {
+  padding:5px 12px;
+  border-radius: 4px;
+  margin: 0 auto;
 }
 
 .lineupButton {
-  padding:6px 15px;
-  float:left;
-  font-size: 18px;
+  background: #000;
+  margin-left: 40px;
+  margin-right: 50px;
+  color: #00d8ff;
+}
+
+.pikachu {
+  background: #fff600;
+}
+
+.dizzy {
+  background: #fc743f;
+  float: right
 }
 
 .topbar{
   height:32px;
-  background-color: #555;
+  width: 650px;
+  margin: 0 auto;
+  /*background-color: #555;*/
 }
 
 .title{
@@ -52,7 +71,9 @@ body, a:link, a:visited, a:active{
 }
 
 .on-mouseover {
-  filter: invert(100%);
+  /*filter: invert(100%);*/
+  transform: scale(1.5);
+  transition: all .2s ease-in-out;
 }
 
 .gif {
@@ -65,5 +86,13 @@ body, a:link, a:visited, a:active{
   display: block;
 }
 
+a {
+  text-decoration: none;
+}
+
+.topbar {
+  color: #000;
+  /*background: linear-gradient(#fff, #00a4f7);*/
+}
 
 
