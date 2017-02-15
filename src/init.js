@@ -1,11 +1,3 @@
-/*
-    1  https://media0.giphy.com/media/6qNansp6qSjWU/200w.gif#285
-    2  http://gifdanceparty.giphy.com/assets/dancers/pumpgirl.gif
-    3  https://media0.giphy.com/media/31vamYdZV5ISQ/200.gif#105
-    Bulbasur https://media1.giphy.com/media/IQ4aXhXz5aoQE/200w.gif#55
-    Dizzy https://media3.giphy.com/media/FcGKYdJSGDykU/200.gif#13
-*/
-
 $(document).ready(function() {
   window.dancers = [];
   window.centerStage = [];
@@ -29,8 +21,6 @@ $(document).ready(function() {
     // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
-    // make a dancer with a random position
-
     var dancer = new dancerMakerFunction(
       $('body').height() * Math.random(),
       $('body').width() * Math.random(),
@@ -44,11 +34,7 @@ $(document).ready(function() {
   $('.addSSDancerButton').on('click', function(event) {
   
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
-
-    // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
-
-    // make a dancer with a random position
 
     var dancer = new dancerMakerFunction(
       $('body').height() * Math.random(),
@@ -63,11 +49,7 @@ $(document).ready(function() {
   $('.addMovingDancerButton').on('click', function(event) {
 
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
-
-    // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
-
-    // make a dancer with a random position
 
     var dancer = new dancerMakerFunction(
       $('body').height() * Math.random(),
@@ -78,19 +60,17 @@ $(document).ready(function() {
     window.dancers.push(dancer);
     $('body').append(dancer.$node);
   });
-  // refactor later, center the dancers
+
   $('.lineupButton').on('click', function(event) {
-    
-    //backup
     var $body = $('body');
     var x = $body.width() * .25;
-    var y = $body.height() * .39;
-    for (var i = 0; i < window.dancers.length; i++, x += 60) {
+    var y = $body.height() * .40;
+    for (var i = 0; i < window.dancers.length; i++, x += 100) {
       window.dancers[i].lineUp(x, y);
     }
 
   });
-  // make dancer spin
+  
   $('body').on('mouseover', '.gif', function(event) {
     $(this).toggleClass('on-mouseover');
   });

@@ -20,8 +20,4 @@ MovingDancer.prototype.step = function() {
   
   //this.$node.animate({height: '20px'}, 500);
   //this.$node.animate({height: '8px'}, 1000);
-
-/*  this.oldStep();
-
-  this.$node.animate({height: this.top}, 500);*/
 };

@@ -45,7 +45,6 @@ body{
   height:32px;
   width: 650px;
   margin: 0 auto;
-  /*background-color: #555;*/
 }
 
 .title{
@@ -71,7 +70,6 @@ body{
 }
 
 .on-mouseover {
-  /*filter: invert(100%);*/
   transform: scale(1.5);
   transition: all .2s ease-in-out;
 }
@@ -92,7 +90,6 @@ a {
 
 .topbar {
   color: #000;
-  /*background: linear-gradient(#fff, #00a4f7);*/
 }
 
 
